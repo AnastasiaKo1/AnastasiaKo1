@@ -1,2 +1,0 @@
-# AnastasiaKo1
-web
