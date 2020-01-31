@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Using external stylesheets</title>
+        <style>
+        body{
+			font-family: sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #fafafa;
+		}
+		#phone{
+			float:left;
+			margin-left:260px;
+			margin-top:140px;
+		}
+		.container {
+            position:absolute;
+            float:right;
+			margin-top: 43px;
+            margin-left: 700px;
+            margin-bottom: 20px;
+            max-width: 270px;
+            height: 540px;
+			padding: 40px;
+            background-color: rgb(255, 255, 255);
+            border-style: solid;
+			border-width: 1px;
+			border-color: rgba(160, 166, 170, 0.315);
+        }
+		#inst{
+			display: block;
+  			margin-left: auto;
+ 			margin-right: auto;
+			width:70%;
+			margin-top:-20px;
+		}
+		h1{
+			font-size:17px;
+			font-weight: bolder;
+			margin-top: 8px;
+			text-align: center;
+			color:rgba(0, 0, 0, 0.39);
+		}
+		.btn{
+			background-color: #008ad3  ;
+			width: 270px;
+			height:35px;
+  			margin-top:6px;
+  			font-size: 14px;
+			border-radius:06px;
+			border:none;
+		}
+		#f{
+			width:20px;
+			height: 20px;
+		}
+		.in{
+			display: block;
+  			margin-left: auto;
+ 			margin-right: auto;
+			width:200px;
+			margin-top: -15px;
+			color:white;
+			font-weight: bolder;
+			font-family:  Verdana, sans-serif;
+			font-size:12px;
+		}
+		h2{
+			font-size:12px;
+			font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			color:rgba(0, 0, 0, 0.39);
+			text-align: center;
+		}
+
+		input[type=text], input[type=password] {
+  border-radius: 03px;
+  border-width: 1px;
+  border-width: 0.5px;
+  background:rgba(209, 209, 209, 0.192);
+  width:270px;
+  padding-bottom: 20px;
+  margin-bottom: 5px;
+  border-color:rgba(0, 0, 0, 0.089);
+  color:rgba(0, 0, 0, 0.39);
+  font-family:  Verdana, sans-serif;
+			font-size:11px;
+  
+}
+.btn2{
+			background-color: #008ad3  ;
+			width: 270px;
+			height:35px;
+  			margin-top:6px;
+  			font-size: 14px;
+			border-radius:06px;
+			border:none;
+			color:white;
+			font-weight: bolder;
+			font-family:  Verdana, sans-serif;
+			font-size:12px;
+
+}
+h3{
+			font-size:13.5px;
+			margin-top: 18px;
+			text-align: center;
+			color:rgba(0, 0, 0, 0.39);
+			font-weight: 500;
+			line-height: 20px;
+
+}
+.www{
+	font-weight: 600;
+}
+.log-in p{
+	padding-top: 18px;
+	padding-bottom: 18px;
+	color: #1a1a1a;
+	font-size: 14px;
+	text-align: center;
+}
+.log-in a{
+	text-decoration: none;
+	color: #03a5e5; 
+}
+.download{
+	margin-top: 30px;
+	width: 345px;
+}
+.download p{
+	margin-left:50px;
+	font-size: 14px;
+	
+}
+.app-store{
+	width: 40%;
+	height: auto;
+	margin-left:0px;
+}
+.google-play{
+	margin-top: 10px;
+	width: 40%;
+	height: auto;
+}
+
+        </style>
+    </head>
+    <body><div>
+		<div class="contain">
+			<img id="phone" src="https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png">
+		</div>
+		
+		<form action="/action_page.php" class="container">
+			<img id="inst" src="instlogo.png">
+			<h1>Зарегистрируйтесь, чтобы <br>
+				смотреть фото и видео ваших<br>
+				 друзей.</h1>
+			<button type="submit" class="btn" ><img id="f" src="1\f.png"><p class="in">Войти через Facebook</p></button>
+			<h2>ИЛИ</h2>
+			<label for="mobile"></label>
+			<input type="text" placeholder="Моб. телефон или эл. адрес">
+			<label for="name"></label>
+			<input type="text" value="Имя и фамилия">
+			<label for="user"></label>
+			<input type="text" value="Имя пользователя" >
+			<label for="passw"></label>
+			<input type="text" value="Пароль">
+			<button type="submit" class="btn2" >Регистрация</button>
+			<h3>Регистрируясь, вы принимаете<br>наши <span class="www">Условия, Политику<br> использования данных </span>и<br>
+				<span class="www">Политику в отношении файлов cookie.</span>. </h3> 
+				<div class="log-in">
+					<p>Есть аккаунт? <a href="">Вход</a></p>
+				</div>
+				<div class="download">
+					<p>Установите приложение.</p>
+					<img class="app-store" src="instappstore.png">
+					<img class="google-play" src="instplaymarket.png">
+				</div></form>
+	
+    </body>
+</html>
