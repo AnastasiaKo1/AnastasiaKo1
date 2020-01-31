@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Facebook</title>
+        <style>
+            *{
+                padding: 0px;
+            margin:0px;
+            }
+            
+        body {
+            background-color: #f8f4ff;
+            font-family: sans-serif;
+            padding: 0px;
+            margin:0px;
+        }
+        
+        .header {
+            background-color: rgb(57, 86, 156);
+            width:100%;
+            height:83px;
+        }
+
+        .header #facebook-name{
+            color:white;
+            font-size: 40px;
+            font-family: sans-serif;
+            float:left;
+            margin-top:28px;
+            margin-left:180px;
+        } 
+        .header .adress{
+            color:white;
+            font-size: 12px;
+            font-weight: 300;
+            font-family: sans-serif;
+            float:right;
+            margin-top:14px;
+            margin-right:210px;
+
+        }
+        .email{
+            width: 149px;
+            height:22px;
+            border-width: 0.5px;
+            border-color: rgb(45, 46, 48);
+        }
+        .password{
+            width: 149px;
+            height:17px;
+            padding-left: 12px;
+        }
+        #forgot{
+            color:rgba(197, 197, 207, 0.76);
+        }
+        .button{
+            padding-left:0px;
+            margin-left:11px;
+            background-color:rgb(73, 106, 184);
+            color:white;
+            width: 42px;
+            height:24px;
+            
+            border-width: 0.1px;
+            border-color: rgba(26, 25, 25, 0.507);
+        }
+        
+        #people {
+            float:left;
+            color:rgb(50, 58, 90);
+            width: 460px;
+            padding-left: 181px;
+            padding-top: 39px;
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight:700;
+            line-height: 1.5em;
+            
+        }
+        #people-pic{
+            padding-left: 0px;
+            padding-top: 0px;
+        }
+
+        #register{
+            float:right;
+            color:rgb(45, 46, 48);
+            padding-top: 23px;
+            padding-right:376px;
+            font-family:sans-serif;
+            font-size: 36px;
+            font-weight:700;
+        }
+
+        h6{
+            float:right;
+            color:rgb(45, 46, 48);
+            padding-top: 10px;
+            padding-right:461px;
+            font-family:sans-serif;
+            font-size: 19px;
+            font-weight:450;
+        }
+        .name{
+            width:183px;
+            height:36px;
+            margin-top: 20px;
+            margin-left:125px;
+            font-size: 19px;
+            padding-left:5px;
+            border-radius: 04px;
+            border:1px solid rgb(204, 204, 240);
+        }
+        .surname{
+            width:183px;
+            height:36px;
+            margin-top: 20px;
+            font-size: 19px;
+            padding-left:5px;
+            margin-left: 6px;
+            border-radius: 04px;
+            border:1px solid rgb(204, 204, 240);
+        }
+        .number{
+            width:385px;
+            height:36px;
+            margin-top: 10px;
+            margin-left:125px;
+            font-size: 19px;
+            padding-left:5px;
+            border-radius: 04px;
+            border:1px solid rgb(204, 204, 240);
+        }
+        .newpass{
+            width:385px;
+            height:36px;
+            margin-top: 10px;
+            margin-left:125px;
+            font-size: 19px;
+            padding-left:5px;
+            border-radius: 04px;
+            border:1px solid rgb(204, 204, 240);
+        }
+        #birth{
+            float:right;
+            padding-right:471px;
+            color:rgba(99, 99, 102, 0.623);
+            
+            margin-top: 20px;
+            font-family:sans-serif;
+            font-size: 17px;
+            font-weight:600;
+        }
+        #day{
+            width:70px;
+            height:30px;
+            margin-top:7px;
+            margin-left:134px;
+            font-size: 14px;
+            padding-left:5px;
+            border:1px solid rgb(204, 204, 240);
+
+        }
+        #month{
+            width:70px;
+            height:30px;
+            margin-top:7px;
+            font-size: 14px;
+            padding-left:5px;
+            border:1px solid rgb(204, 204, 240);
+        }
+        #year{
+            width:70px;
+            height:30px;
+            margin-top:7px;
+            font-size: 14px;
+            padding-left:5px;
+            border:1px solid rgb(204, 204, 240);
+        }
+        #fm{
+            float:right;
+            padding-right:565px;
+            color:rgba(99, 99, 102, 0.623);
+            
+            margin-top: 15px;
+            font-family:sans-serif;
+            font-size: 17px;
+            font-weight:600;
+        }
+
+        .fem{
+            margin-left: 770px;
+            margin-top:50px;
+            font-size:18px;
+        }
+        h3{
+            margin-top:10px;
+            margin-right:285px;
+            float:right;
+            height:05px;
+            font-size:11px;
+            font-weight: normal;
+            color: rgba(115, 115, 121, 0.76);
+        }
+        span{
+            color:#2980b9;
+            text-decoration:none;
+        }
+        .button2{
+            
+            margin-left:769px;
+            margin-top:65px;
+            color:white;
+            background-color:rgb(123, 172, 108);
+            font-size:20px;
+            
+            width: 190px;
+            height:43px;
+            font-size:20px;
+            border-radius:05px;
+            border:1px solid #2c704b;
+        }
+        h2{
+            margin-top:30px;
+            margin-right:250px;
+            float:right;
+            height:05px;
+            font-size:12.5px;
+            font-weight: normal;
+            color: rgba(115, 115, 121, 0.76);
+        }
+
+
+        
+
+        </style>
+    </head>
+    <body>
+        
+    <div class="header">
+        <h1 id="facebook-name">facebook</h1>
+        
+    <div class="adress">
+            <table>
+                <tr>
+                    <td>Электронный адрес или номер телефона   </td>
+                    <td class="password">Пароль</td>
+                </tr>
+                <tr>
+                    <td><input type="email" class="email"></td>
+                    <td class="password"><input type="password" class="email" ></td>
+                    <td class="bb"><input type="button"  class="button" value="Вход"></td>
+
+                </tr>
+                    <tr>
+                        <td></td>
+                        <td id="forgot" class="password">Забыли аккаунт? </td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+      
+    <p id="people">Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.
+    <img id="people-pic" src="https://static.xx.fbcdn.net/rsrc.php/v3/yi/r/OBaVg52wtTZ.png"></p>
+
+    <h5 id="register">Регистрация</h5id></h5>
+    <h6> Быстро и легко.</h6>
+    <table>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+    
+    <input type="text" placeholder="Имя" class="name">
+    <input type="text" placeholder="Фамилия" class="surname"><br>
+    <input type="text" placeholder="Номер мобильного телефона или эл. адрес" class="number">
+    <input type="text" placeholder="Новый пароль" class="newpass">
+
+    <h4 id="birth">Дата рождения</h4>
+
+    <select id="day">
+        <option>29</option>
+    </select id="month">
+    <select id="month"><option>янв</option>
+    </select>
+    <select id="year">
+        <option>1995</option>
+    </select>
+    
+    <h4 id="fm">Пол</h4> <br>
+    <div class="fem">
+    <input  type="radio" id="fem">Женщина  <input type="radio">Мужчина  <input type="radio">Другое
+    </div>
+    <h3>
+            Нажимая кнопку Регистрация, вы принимаете <span>Условия,<br>
+            Политику использования данных и Политику в отношении<br>
+            файлов cookie.</span> Вы можете получать от нас SMS-<br>
+            уведомления, отказаться от которых можно в любой момент.
+    </h3>
+    <input type="button" class="button2"  value="Регистрация">
+    <h2>
+            <span>Создать</span> Страницу знаменитости, музыкальной группы или,<br>
+            компании.</h2>
+</body>
+</html>
